@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #eb952b;
+    margin: 20px;
+}
+
+.parrafos{
+    font-size: 40px;
+    color: #8d5f26;
+
+    text-transform: uppercase;
+    width: 150px;
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+}
+.enlaces{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #8d5f26;
+    font-size: 35px;
+
+}

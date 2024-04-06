@@ -1,0 +1,15 @@
+.cart{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.num{
+    font-size: 30px;
+    color: #ebb36d ;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}

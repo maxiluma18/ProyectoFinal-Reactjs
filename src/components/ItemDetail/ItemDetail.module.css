@@ -1,0 +1,17 @@
+.parrafos{
+    font-size: 40px;
+    color: #8d5f26;
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+.container{
+    text-align: center;
+}
+
+.img{
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+}

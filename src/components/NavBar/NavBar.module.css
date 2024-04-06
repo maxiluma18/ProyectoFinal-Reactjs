@@ -1,0 +1,24 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: #ebb36d solid ;
+}
+
+.enlaces{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ebb36d;
+    font-size: 35px;
+
+}
+
+.list{
+    width: 200px;
+    text-align: center;
+}
+
+.enlaces:hover{
+    color: #fae3a5 ;
+    background-color: #ebb36d;
+}
