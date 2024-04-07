@@ -9,7 +9,13 @@
     color: #ebb36d ;
 }
 
-.container{
+
+
+.hidden{
+    display: none;
+}
+
+.noHidden{
     display: flex;
     align-items: center;
 }

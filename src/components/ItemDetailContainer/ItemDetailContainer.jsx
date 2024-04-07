@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
-import { getProductById } from "../../asyncMock"
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from "../../services/firebase/firebaseConfig"
 import { useParams } from "react-router-dom"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import clases from "../ItemDetail/ItemDetail.module.css"
@@ -10,13 +11,20 @@ const ItemDetailContainer =()=>{
 
     const {itemId}  = useParams();
     
-    useEffect(()=>{
-        getProductById(itemId)
-            .then(result=>{
-                setProduct(result);
-                setLoading(false);
-            })
-    }, [itemId])
+    useEffect(() => {
+        const productDoc = doc(db, "productos", itemId)
+    
+       getDoc(productDoc)
+        .then(queryDocumentSnapshot => {
+            const data = queryDocumentSnapshot.data();
+            const productAdapted = {id: queryDocumentSnapshot.id, ...data }
+    
+            setProduct(productAdapted)
+        })
+        .catch()
+        .finally(()=> setLoading(false))
+      }, [itemId]);
+    
 
 
     if (loading) {
