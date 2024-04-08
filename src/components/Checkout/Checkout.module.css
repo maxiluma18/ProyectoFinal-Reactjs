@@ -1,0 +1,73 @@
+.parrafos{
+    font-size: 40px;
+    color: #8d5f26;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.boton_carrito{
+    color:  #8d5f26;
+    background-color: #eb952b;
+    font-size: 35px;
+    cursor: pointer;
+}
+.boton_carrito:hover{
+    background-color: #33210b;
+}
+
+.enlaces{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #8d5f26;
+    font-size: 35px;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.form{
+    text-align: center;
+}
+
+.label {
+    color: #8d5f26;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.input{
+    background-color: #eb952b;
+    text-align: center;
+    font-size: 30px;
+    display: inline-block;
+    margin: auto; 
+
+}
+
+.flex_column{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.boton_check{
+    background-color:  #8d5f26;
+    color: #eb952b;
+    font-size: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.boton_check:hover{
+    background-color: #6b4c26;
+}
+
+.orden{
+    font-size: 30px;
+    color: #8d5f26;
+    text-align: center;
+}
