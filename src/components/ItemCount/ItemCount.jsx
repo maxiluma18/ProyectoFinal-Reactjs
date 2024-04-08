@@ -1,11 +1,11 @@
 import { useState } from "react"
 import clases from "./ItemCount.module.css"
 
-const ItemCount = ({initial =1, stock, onAdd}) =>{
+const ItemCount = ({initial =0, stock, onAdd}) =>{
     const [count, setCount] = useState(initial)
 
     const decrement = ()=>{
-        if(count > 1){
+        if(count > 0){
             setCount(prev => prev - 1)
         }
     }

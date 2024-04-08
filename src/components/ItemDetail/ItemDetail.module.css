@@ -5,8 +5,16 @@
     text-align: center;
 }
 
+.stock{
+    font-size: 20px;
+    color: #8d5f26;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .container{
     text-align: center;
+    
 }
 
 .img{

@@ -14,7 +14,7 @@ const ItemDetailContainer =()=>{
     useEffect(() => {
         const productDoc = doc(db, "productos", itemId)
     
-       getDoc(productDoc)
+        getDoc(productDoc)
         .then(queryDocumentSnapshot => {
             const data = queryDocumentSnapshot.data();
             const productAdapted = {id: queryDocumentSnapshot.id, ...data }
@@ -23,7 +23,7 @@ const ItemDetailContainer =()=>{
         })
         .catch()
         .finally(()=> setLoading(false))
-      }, [itemId]);
+    }, [itemId]);
     
 
 

@@ -15,17 +15,17 @@ const ItemListContainer =(props)=>{
     useEffect(() => {
 
         const productCollection = categoriaId ? query(collection(db, "productos"), where("categoria", "==", categoriaId) ) : collection(db, "productos")
-  
-      getDocs(productCollection)
-          .then(querySnapshot =>{
-           const productsAdapted = querySnapshot.docs.map(doc => {
+
+    getDocs(productCollection)
+        .then(querySnapshot =>{
+        const productsAdapted = querySnapshot.docs.map(doc => {
             const data = doc.data()
             return {id: doc.id, ...data}
-           })
-           setProducts(productsAdapted)
-          })
-          .catch(error => console.error(error))
-          .finally(()=> setLoading(false))
+        })
+        setProducts(productsAdapted)
+        })
+        .catch(error => console.error(error))
+        .finally(()=> setLoading(false))
     
     }, [categoriaId]);
     
